@@ -5,7 +5,7 @@ function App() {
     const [message, setMessage] = useState("");
 
     useEffect(() => {
-        axios.get("/").then(response => {
+        axios.get("/app").then(response => {
             setMessage(response.data.message);
         });
     }, []);
