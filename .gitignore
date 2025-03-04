@@ -1,12 +1,5 @@
 # Dependencies
 node_modules/
-/dist
-/build
-/.pnp
-.pnp.js
-
-# Testing
-/coverage
 
 # Production
 /build
@@ -18,58 +11,10 @@ node_modules/
 .env.test.local
 .env.production.local
 
-# Debug logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# IDE - VSCode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-*.code-workspace
-
-# IDE - IntelliJ
-.idea/
-*.iml
-*.iws
-*.ipr
-
 # macOS
 .DS_Store
 .AppleDouble
 .LSOverride
-
-# Windows
-Thumbs.db
-Thumbs.db:encryptable
-ehthumbs.db
-*.lnk
-
-# Compiled files
-*.com
-*.class
-*.dll
-*.exe
-*.o
-*.so
-
-# Packages
-*.7z
-*.dmg
-*.gz
-*.iso
-*.jar
-*.rar
-*.tar
-*.zip
-
-# Logs and databases
-*.log
-*.sql
-*.sqlite 
 
 # pem key
 *.pem

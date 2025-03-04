@@ -3,3 +3,36 @@
 ## 1. 
 
 ssh -i loes-pro.pem ubuntu@18.207.0.178
+
+## 2. Check if domain propagates
+
+dig loes.pro +short
+
+## 3. Check if nginx is running
+
+sudo systemctl status nginx
+
+## 4. Check if pm2 is running
+
+pm2 status
+
+## 5. Add certificate
+
+sudo certbot --nginx -d loes.pro --email ladeiraloes@gmail.com --agree-tos --redirect --non-interactive
+
+## 6. Restart nginx
+
+sudo systemctl restart nginx
+
+## 7. Restart pm2
+
+pm2 restart all
+
+## 8. Check if pm2 is running
+
+pm2 status
+
+## 9. Run front end build
+
+npm install
+npm run build

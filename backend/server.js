@@ -3,8 +3,8 @@ const cors = require("cors");
 const app = express();
 app.use(cors());
 
-app.get("/api", (req, res) => {
-    res.json({ message: "Hello from the backend!" });
+app.get("/testapi", (req, res) => {
+    res.json({ message: "Hello from loes.pro!" });
 });
 
 const PORT = 5000;
