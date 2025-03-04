@@ -1,0 +1,5 @@
+# Connection
+
+## 1. 
+
+ssh -i loes-pro.pem ubuntu@18.207.0.178
